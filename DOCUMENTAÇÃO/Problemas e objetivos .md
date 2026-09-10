@@ -39,6 +39,7 @@ Desenvolver um novo sistema para a sorveteria, um sistema mais moderno, atualiza
  Registrar o pagamento;  
  Fechar a comanda após o pagamento;  
  Consultar as comandas em aberto.  
+ 
           **Estoque**
  Cadastrar a quantidade disponível de cada produto;  
  Consultar a quantidade disponível no estoque;  
