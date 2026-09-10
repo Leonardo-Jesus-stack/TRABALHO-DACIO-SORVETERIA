@@ -1,12 +1,13 @@
-# TRABALHO-DACIO-SORVETERIA
+# Projeto-SORVETERIA-
+# Sistema para facilitar no controle de vendas e estoque
 
-INTEGRANTES 
-Leonardo Jesus Siqueira Peixoto
-Enzo Enrico Petta
-Matheus Augusto Paixão
-João Eduardo Tesolin Carnelosi
+## Integrantes
 
-#OBJETIVO
- Criar um novo sistema moderno e atualizado para uma sorveteria, para ajudar no controle de vendas e estoque
+- Leonardo Jesus Siqueira Peixoto
+- Enzo Enrico Petta
+- Matheus Augusto Paixão
+- João Eduardo Tesolin Carnelosi
 
- 
+## Sobre o projeto
+
+Nossa proposta é desenvolver um sistema simples para ajudar no contole de vendas e estoque de uma sorveteria 
