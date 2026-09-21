@@ -59,7 +59,7 @@ Responsável por:
   Consultar produtos;
   Adicionar produtos;
   Informar a quantidade de cada produto;
-  Verificar se existe quantidade suficiente no       estoque;
+  Verificar se existe quantidade suficiente no estoque;
   Consultar os produtos da comanda;
   Calcular o valor total;
   Finalizar a comanda;
@@ -68,7 +68,12 @@ Responsável por:
 
 Módulo de Estoque
 Responsável por:
-  Responsável por:   Consultar estoque;   Atualizar quantidade;   Diminuir o estoque após uma venda;   Aumentar o estoque após uma reposição;   Informar quando um produto estiver sem estoque.
+  Responsável por:   
+Consultar estoque;   
+Atualizar quantidade;   
+Diminuir o estoque após uma venda;   
+Aumentar o estoque após uma reposição;   
+Informar quando um produto estiver sem estoque.
 
 Módulo Principal
 Será responsável pelo menu principal do sistema e pela chamada das funções dos outros módulos.
