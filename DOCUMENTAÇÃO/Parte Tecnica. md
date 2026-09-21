@@ -1,7 +1,12 @@
 Structs
 Para organizar os dados do sistema, serão utilizadas structs para representar os produtos, os itens da comanda e as comandas.
 Produto
-struct Produto { int codigo; char nome[50]; float preco; int quantidadeEstoque; };
+struct Produto { 
+int codigo; 
+char nome[50]; 
+float preco; 
+int quantidadeEstoque; 
+};
 
 A struct Produto guarda o código, nome, preço e quantidade disponível no estoque.
 
