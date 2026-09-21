@@ -1,1 +1,69 @@
+Structs
+Para organizar os dados do sistema, serão utilizadas structs para representar os produtos, os itens da comanda e as comandas.
+Produto
+struct Produto { int codigo; char nome[50]; float preco; int quantidadeEstoque; };
 
+A struct Produto guarda o código, nome, preço e quantidade disponível no estoque.
+
+Item da Comanda
+struct ItemComanda { int codigoProduto; char nomeProduto[50]; int quantidade; float precoUnitario; float subtotal; };
+
+A struct ItemComanda representa cada produto que foi colocado em uma comanda, guardando a quantidade, o preço e o subtotal.
+
+Comanda
+struct Comanda { int codigo; char nomeCliente[50]; struct ItemComanda itens[50]; int quantidadeItens; float valorTotal; int status; };
+
+A struct Comanda guarda os dados da comanda, o nome do cliente, os produtos pedidos, a quantidade de itens, o valor total e o status da comanda.
+O status pode ser:
+* 0 = comanda aberta
+* 1 = comanda fechada
+
+Vetores e Strings
+Serão utilizados vetores para armazenar vários produtos e comandas.
+Vetor de produtos:
+struct Produto produtos[100];
+Vetor de comandas:
+struct Comanda comandas[100];
+Também serão utilizadas strings para armazenar nomes:
+char nome[50];
+char nomeCliente[50];
+char nomeProduto[50];
+Não será necessário utilizar matrizes numéricas de duas dimensões, pois os dados principais serão organizados por meio das structs e vetores.
+
+Arquivos para armazenamento
+Futuramente, o sistema poderá utilizar arquivos para guardar os dados mesmo depois que o programa for fechado.
+produtos.txt
+Será utilizado para armazenar os dados dos produtos, como código, nome, preço e quantidade em estoque.
+comandas.txt
+Será utilizado para armazenar as comandas cadastradas, seus produtos, valores e status.
+
+Organização dos módulos
+O sistema poderá ser dividido em módulos para deixar o código mais organizado.
+
+Módulo de Produtos
+Responsável por:
+   Cadastrar produtos;
+   Alterar produtos;
+   Excluir produtos;
+   Consultar produtos.
+
+Módulo de Comandas
+Responsável por:
+  Criar comanda;
+  Identificar o cliente;
+  Consultar produtos;
+  Adicionar produtos;
+  Informar a quantidade de cada produto;
+  Verificar se existe quantidade suficiente no       estoque;
+  Consultar os produtos da comanda;
+  Calcular o valor total;
+  Finalizar a comanda;
+  Registrar o pagamento;
+  Fechar a comanda após o pagamento.
+
+Módulo de Estoque
+Responsável por:
+  Responsável por:   Consultar estoque;   Atualizar quantidade;   Diminuir o estoque após uma venda;   Aumentar o estoque após uma reposição;   Informar quando um produto estiver sem estoque.
+
+Módulo Principal
+Será responsável pelo menu principal do sistema e pela chamada das funções dos outros módulos.
