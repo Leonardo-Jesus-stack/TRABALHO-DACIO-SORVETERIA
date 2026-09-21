@@ -10,4 +10,4 @@
 
 ## Sobre o projeto
 
-Nossa proposta é desenvolver um sistema simples para ajudar no contole de vendas e estoque de uma sorveteria 
+Nossa proposta é desenvolver um sistema para ajudar no contole de vendas e estoque de uma sorveteria 
