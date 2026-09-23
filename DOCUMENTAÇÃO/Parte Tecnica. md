@@ -11,12 +11,21 @@ int quantidadeEstoque; 
 A struct Produto guarda o código, nome, preço e quantidade disponível no estoque.
 
 Item da Comanda
-struct ItemComanda { int codigoProduto; char nomeProduto[50]; int quantidade; float precoUnitario; float subtotal; };
+struct ItemComanda { int codigoProduto; 
+char nomeProduto[50]; 
+int quantidade; 
+float precoUnitario; 
+float subtotal; };
 
 A struct ItemComanda representa cada produto que foi colocado em uma comanda, guardando a quantidade, o preço e o subtotal.
 
 Comanda
-struct Comanda { int codigo; char nomeCliente[50]; struct ItemComanda itens[50]; int quantidadeItens; float valorTotal; int status; };
+struct Comanda { int codigo; 
+char nomeCliente[50]; 
+struct ItemComanda itens[50]; 
+int quantidadeItens; 
+float valorTotal; 
+int status; };
 
 A struct Comanda guarda os dados da comanda, o nome do cliente, os produtos pedidos, a quantidade de itens, o valor total e o status da comanda.
 O status pode ser:
